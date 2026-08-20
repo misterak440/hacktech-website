@@ -1,0 +1,298 @@
+:root {
+    --bg-dark: #0b0f0d;
+    --bg-panel: #121814;
+    --accent-green: #00ff11;
+    --accent-green-dim: #0a8c12;
+    --accent-red: #ff3b3b;
+    --text-light: #e8f5e9;
+    --text-muted: #9fb3a5;
+    --border-color: #1f2d22;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    min-height: 100vh;
+    background-color: var(--bg-dark);
+    background-image:
+        linear-gradient(rgba(11, 15, 13, 0.9), rgba(11, 15, 13, 0.95)),
+        url('Images/Green-Black.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    color: var(--text-light);
+    font-family: 'Consolas', 'Courier New', monospace;
+    line-height: 1.5;
+}
+
+a {
+    color: var(--accent-green);
+    text-decoration: none;
+}
+
+a:hover {
+    color: var(--accent-red);
+    text-decoration: underline;
+}
+
+/* ---------- Navigation ---------- */
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 15px;
+    padding: 15px 30px;
+    background-color: var(--bg-panel);
+    border-bottom: 2px solid var(--accent-green-dim);
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: var(--text-light);
+}
+
+.nav-logo:hover {
+    color: var(--text-light);
+    text-decoration: none;
+}
+
+.nav-logo img {
+    width: 36px;
+    height: auto;
+}
+
+.nav-logo .accent {
+    color: var(--accent-green);
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+}
+
+.nav-links a {
+    color: var(--text-light);
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.nav-links a:hover {
+    color: var(--accent-green);
+}
+
+/* ---------- Page container ---------- */
+main {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 30px 20px 60px;
+}
+
+/* ---------- Hero / box panel ---------- */
+.box {
+    text-align: center;
+    padding: 50px 20px;
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    background-color: rgba(18, 24, 20, 0.75);
+    box-shadow: 0 0 25px rgba(0, 255, 17, 0.08);
+    margin-bottom: 40px;
+}
+
+.box img {
+    width: 90px;
+    height: auto;
+}
+
+.box h1 {
+    margin: 15px 0 0;
+    font-size: 2.2rem;
+    color: var(--text-light);
+}
+
+.box h1 .accent {
+    color: var(--accent-green);
+}
+
+.tagline {
+    color: var(--text-muted);
+    margin-top: 10px;
+}
+
+/* ---------- Home page link cards ---------- */
+.link-list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.link-card {
+    display: block;
+    padding: 20px 25px;
+    background-color: var(--bg-panel);
+    border: 1px solid var(--border-color);
+    border-radius: 8px;
+    font-size: 1.3rem;
+    color: var(--text-light);
+    transition: border-color 0.2s ease, transform 0.2s ease;
+}
+
+.link-card:hover {
+    border-color: var(--accent-green);
+    transform: translateX(4px);
+    text-decoration: none;
+    color: var(--accent-green);
+}
+
+.link-card .highlight {
+    color: var(--accent-red);
+}
+
+.link-card:hover .highlight {
+    color: var(--accent-green);
+}
+
+/* ---------- Content sections ---------- */
+section {
+    margin-bottom: 35px;
+}
+
+section h2 {
+    color: var(--accent-green);
+    border-bottom: 1px solid var(--border-color);
+    padding-bottom: 8px;
+}
+
+section h3 {
+    color: var(--text-light);
+    margin-bottom: 5px;
+}
+
+section ul {
+    padding-left: 22px;
+}
+
+section ul ul {
+    margin-top: 5px;
+    color: var(--text-muted);
+}
+
+section li {
+    margin-bottom: 4px;
+}
+
+.phase {
+    margin-bottom: 20px;
+    padding: 15px 20px;
+    background-color: var(--bg-panel);
+    border-left: 3px solid var(--accent-green-dim);
+    border-radius: 6px;
+}
+
+.phase h3 {
+    margin-top: 0;
+    color: var(--accent-green);
+}
+
+.phase p {
+    margin: 6px 0;
+}
+
+.phase .tools {
+    color: var(--text-muted);
+    font-size: 0.95rem;
+}
+
+/* ---------- PDF page ---------- */
+.pdf-frame {
+    display: block;
+    width: 100%;
+    max-width: 800px;
+    height: 70vh;
+    margin: 20px auto;
+    border: 2px solid var(--accent-green-dim);
+    border-radius: 10px;
+}
+
+.pdf-note {
+    text-align: center;
+    color: var(--text-light);
+}
+
+/* ---------- Disclaimer ---------- */
+.disclaimer {
+    display: flex;
+    gap: 12px;
+    padding: 15px 20px;
+    margin-bottom: 30px;
+    background-color: rgba(255, 59, 59, 0.08);
+    border: 1px solid var(--accent-red);
+    border-radius: 8px;
+    color: var(--text-light);
+    font-size: 0.95rem;
+}
+
+.disclaimer strong {
+    color: var(--accent-red);
+}
+
+/* ---------- Back link ---------- */
+.back-link {
+    display: inline-block;
+    margin-top: 20px;
+    color: var(--text-muted);
+}
+
+.back-link:hover {
+    color: var(--accent-green);
+}
+
+/* ---------- Footer ---------- */
+.site-footer {
+    text-align: center;
+    padding: 25px 20px;
+    color: var(--text-muted);
+    font-size: 0.9rem;
+    border-top: 1px solid var(--border-color);
+}
+
+.site-footer a {
+    color: var(--text-muted);
+}
+
+.site-footer a:hover {
+    color: var(--accent-green);
+}
+
+/* ---------- Responsive ---------- */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .box h1 {
+        font-size: 1.6rem;
+    }
+
+    .pdf-frame {
+        height: 50vh;
+    }
+}

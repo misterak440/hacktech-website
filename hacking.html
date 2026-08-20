@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>What is HACKING</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <a href="index.html" class="nav-logo">
+                <img src="Images/HT.png" alt="HackTech logo">
+                <span>HACK<span class="accent">TECH</span></span>
+            </a>
+            <ul class="nav-links">
+                <li><a href="hacking.html">What is Hacking?</a></li>
+                <li><a href="cybersecurity.html">Cybersecurity Roadmap</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="box">
+            <h1>What is <span class="accent">HACKING?</span></h1>
+        </div>
+
+        <div class="disclaimer">
+            <span>&#9888;</span>
+            <p><strong>Disclaimer:</strong> This content is for educational purposes only. The tools and techniques mentioned are meant to help you understand how attacks work so you can defend against them. Using them against systems or networks you don't own or have explicit permission to test is illegal.</p>
+        </div>
+
+        <section>
+            <p>Hacking is the process of exploiting weaknesses in computer systems, networks, or software to gain unauthorized access, manipulate data, or disrupt operations. It can be used for both ethical and malicious purposes.</p>
+        </section>
+
+        <section>
+            <h2>Types of Hacking</h2>
+            <ul>
+                <li><strong>Ethical Hacking (White Hat)</strong> &ndash; Performed by security professionals to identify and fix vulnerabilities.</li>
+                <li><strong>Black Hat Hacking</strong> &ndash; Done with malicious intent to steal data, spread malware, or disrupt systems.</li>
+                <li><strong>Grey Hat Hacking</strong> &ndash; Falls between ethical and malicious hacking; may involve unauthorized access but without harmful intentions.</li>
+                <li><strong>Script Kiddies</strong> &ndash; Inexperienced hackers who use pre-made tools without deep knowledge of hacking techniques.</li>
+                <li><strong>Hacktivism</strong> &ndash; Hacking done for political or social causes.</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Phases of Hacking</h2>
+            <p>The five phases of hacking describe the structured approach that hackers (both ethical and malicious) follow to compromise a target system.</p>
+
+            <div class="phase">
+                <h3>1. Reconnaissance (Information Gathering)</h3>
+                <p><strong>Objective:</strong> Gather as much information as possible about the target before launching an attack.</p>
+                <p><strong>Methods:</strong></p>
+                <ul>
+                    <li><strong>Passive Reconnaissance</strong> &ndash; Collecting data without interacting directly with the target (e.g., Google searches, WHOIS lookups, social media).</li>
+                    <li><strong>Active Reconnaissance</strong> &ndash; Direct interaction with the target (e.g., port scanning, email footprinting).</li>
+                </ul>
+                <p class="tools"><strong>Tools:</strong> Nmap, Maltego, Shodan, Google Dorking</p>
+            </div>
+
+            <div class="phase">
+                <h3>2. Scanning (Enumeration &amp; Vulnerability Detection)</h3>
+                <p><strong>Objective:</strong> Identify live systems, open ports, services, and vulnerabilities in the target.</p>
+                <p><strong>Methods:</strong></p>
+                <ul>
+                    <li><strong>Port Scanning</strong> &ndash; Finding open ports and running services.</li>
+                    <li><strong>Network Mapping</strong> &ndash; Identifying connected devices and network topology.</li>
+                    <li><strong>Vulnerability Scanning</strong> &ndash; Detecting security flaws in software and systems.</li>
+                </ul>
+                <p class="tools"><strong>Tools:</strong> Nmap, Nessus, OpenVAS, Metasploit</p>
+            </div>
+
+            <div class="phase">
+                <h3>3. Gaining Access (Exploitation)</h3>
+                <p><strong>Objective:</strong> Exploit identified vulnerabilities to gain control over the target system.</p>
+                <p><strong>Methods:</strong></p>
+                <ul>
+                    <li><strong>Password Cracking</strong> &ndash; Using brute force or dictionary attacks.</li>
+                    <li><strong>Exploiting Software Bugs</strong> &ndash; Taking advantage of unpatched vulnerabilities.</li>
+                    <li><strong>Privilege Escalation</strong> &ndash; Gaining higher-level access for deeper control.</li>
+                </ul>
+                <p class="tools"><strong>Tools:</strong> Metasploit, Hydra, SQLmap, John the Ripper</p>
+            </div>
+
+            <div class="phase">
+                <h3>4. Maintaining Access (Persistence &amp; Backdoors)</h3>
+                <p><strong>Objective:</strong> Ensure continued access to the compromised system without detection.</p>
+                <p><strong>Methods:</strong></p>
+                <ul>
+                    <li><strong>Creating Backdoors</strong> &ndash; Installing hidden access points for future entry.</li>
+                    <li><strong>Rootkits &amp; Trojans</strong> &ndash; Concealing malicious activities.</li>
+                    <li><strong>Modifying System Settings</strong> &ndash; Disabling security measures or logging tools.</li>
+                </ul>
+                <p class="tools"><strong>Tools:</strong> Netcat, Mimikatz, Meterpreter, Persistence scripts</p>
+            </div>
+
+            <div class="phase">
+                <h3>5. Covering Tracks (Clearing Evidence)</h3>
+                <p><strong>Objective:</strong> Remove traces of hacking activity to avoid detection and forensic investigations.</p>
+                <p><strong>Methods:</strong></p>
+                <ul>
+                    <li><strong>Clearing Logs</strong> &ndash; Deleting system and security logs.</li>
+                    <li><strong>Timestomping</strong> &ndash; Modifying timestamps of files to mislead investigators.</li>
+                    <li><strong>Using Proxies &amp; VPNs</strong> &ndash; Hiding real identity and location.</li>
+                </ul>
+                <p class="tools"><strong>Tools:</strong> CCleaner, Timestomp, Tor, VPNs</p>
+            </div>
+        </section>
+
+        <section>
+            <h2>Common Hacking Techniques</h2>
+            <ul>
+                <li><strong>Phishing</strong> &ndash; Tricking users into revealing personal information.</li>
+                <li><strong>Malware Attacks</strong> &ndash; Injecting viruses, worms, or ransomware into systems.</li>
+                <li><strong>SQL Injection</strong> &ndash; Exploiting vulnerabilities in databases.</li>
+                <li><strong>Man-in-the-Middle (MitM) Attacks</strong> &ndash; Intercepting communication between two parties.</li>
+                <li><strong>Brute Force Attacks</strong> &ndash; Cracking passwords through trial and error.</li>
+            </ul>
+        </section>
+
+        <p class="pdf-note">Prefer the original slides? <a href="PDFs/hacking.pdf" download="What is HACKING.pdf">Download the PDF here</a>.</p>
+
+        <a class="back-link" href="index.html">&larr; Back to Home</a>
+    </main>
+
+    <footer class="site-footer">
+        <p>&copy; 2026 HackTech &mdash; Educational content only.</p>
+    </footer>
+</body>
+</html>
